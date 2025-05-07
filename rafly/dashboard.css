@@ -1,0 +1,121 @@
+/* Mengatur body dengan latar belakang yang lebih terang dan elegan */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #9c27b0, #6a1b9a); /* Gradasi ungu ke ungu lebih gelap */
+    color: #333;
+}
+
+/* Navbar yang lebih minimalis dengan gradasi warna */
+.navbar {
+    background: linear-gradient(135deg, #8e24aa, #d81b60); /* Gradasi ungu cerah ke merah muda */
+    padding: 20px 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .brand {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar .links a {
+    text-decoration: none;
+    margin: 0 18px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .links a:hover {
+    color: #ffd54f; /* Warna kuning keemasan */
+    transform: translateY(-3px);
+}
+
+/* Main content area */
+.main {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading section */
+h2 {
+    text-align: center;
+    color: #9c27b0; /* Warna ungu cerah */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+/* Tabel dengan desain modern dan ringan */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+th {
+    background-color: #9c27b0; /* Ungu cerah */
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f1f1f1;
+    text-align: center;
+    font-size: 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Warna lebih terang untuk baris genap */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Efek hover baris tabel */
+}
+
+/* Actions (button, link) */
+.actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.actions button, .actions a {
+    background-color: #8e24aa; /* Warna ungu cerah */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    margin: 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.actions button:hover, .actions a:hover {
+    background-color: #6a1b9a; /* Ungu lebih gelap */
+    transform: translateY(-3px);
+}
+
+/* Styling untuk tombol kembali */
+.actions a {
+    background-color: #00bcd4; /* Biru cyan */
+}
+
+.actions a:hover {
+    background-color: #008c8a; /* Cyan lebih gelap */
+}

@@ -1,0 +1,153 @@
+/* === Reset dan Latar Belakang === */
+body {
+    margin: 0;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #a18cd1, #fbc2eb);
+    color: #333;
+}
+
+/* === Judul Halaman === */
+h2 {
+    text-align: center;
+    color: #5d3b90;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+/* === Form Filter === */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    background: #ffffffcc;
+    padding: 20px 25px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+input[type="date"],
+select,
+form button {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+form button {
+    background: #8e44ad;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #732d91;
+    transition: 0.2s ease;
+}
+
+form button:hover {
+    background: #732d91;
+}
+
+form button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #5e3370;
+}
+
+/* === Tombol Aksi (Print, Excel, Kembali) === */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.actions a,
+.actions button {
+    background: #8e44ad;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #732d91;
+    transition: all 0.2s ease-in-out;
+}
+
+.actions a:hover,
+.actions button:hover {
+    background-color: #732d91;
+}
+
+.actions a:active,
+.actions button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #5e3370;
+}
+
+/* === Tabel Laporan === */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+thead {
+    background-color: #8e44ad;
+    color: white;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #f0e9f7;
+}
+
+tbody tr:hover {
+    background-color: #f3e9f9;
+}
+
+td:last-child,
+th:last-child {
+    text-align: right;
+}
+
+/* === Responsif === */
+@media (max-width: 600px) {
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* === Mode Cetak === */
+@media print {
+    .no-print,
+    .actions {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
+
+    table {
+        box-shadow: none;
+    }
+}

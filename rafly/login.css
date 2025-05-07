@@ -1,0 +1,76 @@
+/* Mengatur warna latar belakang halaman */
+body {
+    background: linear-gradient(135deg, #8e24aa, #ab47bc); /* Gradasi ungu cerah */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Mengatur kontainer login */
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+/* Efek hover pada kontainer login */
+form:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Mengatur teks judul */
+h1 {
+    text-align: center;
+    color: #8e24aa; /* Warna ungu cerah */
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Mengatur input email dan password */
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s ease;
+}
+
+/* Efek fokus pada input fields */
+input:focus {
+    border-color: #9c27b0; /* Ungu terang */
+    outline: none;
+    background-color: #f3e5f5; /* Latar belakang ungu pastel saat fokus */
+}
+
+/* Mengatur tombol login */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8e24aa; /* Ungu */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+/* Efek hover pada tombol */
+button:hover {
+    background-color: #520d80; /* Ungu lebih gelap */
+    transform: translateY(-3px); /* Efek naik sedikit saat hover */
+}
+
+/* Menambahkan efek saat tombol diklik */
+button:active {
+    transform: translateY(1px); /* Efek menurun saat tombol diklik */
+}

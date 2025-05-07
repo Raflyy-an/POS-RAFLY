@@ -1,0 +1,104 @@
+/* Umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    color: #5e4b8b;
+}
+
+/* Form input */
+.input form {
+    background: #fff;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.input select,
+.input input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Label dan teks detail */
+.input label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.input p {
+    margin: 5px 0;
+}
+
+/* Tombol transaksi */
+button {
+    background-color: #8e44ad;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 0 #732d91;
+}
+
+button:hover {
+    background-color: #732d91;
+}
+
+button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #5e3370;
+}
+
+/* Link kembali */
+.back a {
+    display: inline-block;
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 4px 0 #732d91;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+.back a:hover {
+    background-color: #732d91;
+}
+
+.back a:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #5e3370;
+}
+
+/* Struk pembelian */
+#struk {
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+#struk p {
+    margin: 8px 0;
+    font-size: 16px;
+}
